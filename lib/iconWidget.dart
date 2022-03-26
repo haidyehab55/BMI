@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-
-const TextStyle lable = TextStyle(
-  fontSize: 12.0,
-  color: Color(0xFF7C7C8C),
-);
+import 'constants.dart';
 
 class IconWidget extends StatelessWidget {
   IconWidget({@required this.text, this.icon});
@@ -13,6 +9,7 @@ class IconWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Icon(
           icon,
@@ -21,7 +18,7 @@ class IconWidget extends StatelessWidget {
         SizedBox(height: 10.0),
         Text(
           text,
-          style: lable,
+          style: kLabel,
         ),
       ],
     );
