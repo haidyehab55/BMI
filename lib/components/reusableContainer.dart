@@ -12,10 +12,10 @@ class ReusableContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onPress,
       child: Container(
-        margin: EdgeInsets.all(2.0),
+        margin: EdgeInsets.all(8.0),
         decoration: BoxDecoration(
           color: colour,
-          borderRadius: BorderRadius.circular(8.0),
+          borderRadius: BorderRadius.circular(10.0),
         ),
         child: cardChild,
       ),
